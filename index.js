@@ -4,7 +4,7 @@ const details = require('./fakeData/languageDetails.json');
 const cors = require('cors');
 const e = require('express');
 const app = express();
-const port = 5000;
+const port = process.env.PORT || 5000;
 app.use(cors())
 
 
